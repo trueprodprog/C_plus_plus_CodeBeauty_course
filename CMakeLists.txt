@@ -9,3 +9,4 @@ add_executable(if_else_stat if_else_statements/if_else_stat1.cpp
         if_else_statements/if_else_stat2.cpp)
 add_executable(Operators Operators/Operators1.cpp
         Operators/swapping2Variables.cpp)
+add_executable(BMICalculator Side_Projects/BMICalculator.cpp)
