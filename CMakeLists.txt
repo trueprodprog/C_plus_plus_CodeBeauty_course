@@ -15,4 +15,6 @@ add_executable(Guess_game Side_Projects/Guess_game.cpp)
 add_executable(Calculator Side_Projects/Calculator.cpp)
 add_executable(DaysInMonth Side_Projects/DaysInMonth.cpp)
 add_executable(while_loop Side_Projects/showAllNumbersdivby3and5.cpp
-        Side_Projects/CountDigitsInNumber.cpp)
+        Side_Projects/CountDigitsInNumber.cpp
+        Side_Projects/ReverseOrderOfNumber.cpp
+        Side_Projects/PinCheckingAttempts.cpp)
