@@ -35,4 +35,5 @@ add_executable(OOP1 Side_Projects/OOPYoutubeChannel.cpp
         Side_Projects/OOP2WorkingForEncapsulation.cpp)
 add_executable(OOP2 Side_Projects/OOP2WorkingForEncapsulation.cpp)
 add_executable(Pointers Pointers/Pointers1.cpp
-        Pointers/ArraysAndPointers.cpp)
+        Pointers/ArraysAndPointers.cpp
+        Pointers/ReturnViaPointersFromFunction.cpp)
