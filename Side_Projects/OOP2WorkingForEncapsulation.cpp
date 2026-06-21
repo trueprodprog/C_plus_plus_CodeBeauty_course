@@ -9,15 +9,18 @@ class YouTubeChannel {
 
 private:
     string Name;
-    string OwnerName;
     int SubscribersCount;
     list<string> PublishedVideoTitles;
+protected:
+    string OwnerName; //child class  can see it
+    int ContentQuality;
 public:
     //constructor
     YouTubeChannel(string name, string ownerName) {
         Name = name;
         OwnerName = ownerName;
         SubscribersCount = 0;
+        ContentQuality = 0;
     }
 
     //method to show information
@@ -42,6 +45,15 @@ public:
     void PublishVideo(string title) {
         PublishedVideoTitles.push_back(title);
     }
+
+    void CheckAnalytics() {
+        if (ContentQuality < 5)
+            cout << Name << " has bad quality content " << endl;
+        else
+            cout << Name << " has great quality content " << endl;
+    }
+
+
     // --- GETTERS ---
     string getName() {
         return Name;
@@ -61,6 +73,34 @@ public:
     }
 };
 
+// inheritance
+class CookingYouTubeChannel:public YouTubeChannel {
+public:
+    CookingYouTubeChannel(string name, string ownerName):YouTubeChannel(name, ownerName) {
+
+    }
+
+    void Practice() { //polymorphism - different implementations but same method name
+        cout << OwnerName << " is practicing cooking, learning new recipes, experimenting with spices..." << endl;
+        ContentQuality++;
+    }
+
+};
+
+
+// inheritance
+class SingersYouTubeChannel:public YouTubeChannel {
+public:
+    SingersYouTubeChannel(string name, string ownerName):YouTubeChannel(name, ownerName) {
+
+    }
+
+    void Practice() {
+        cout << OwnerName << " is taking singing classes, learning new songs, learning how to dance..." << endl;
+        ContentQuality++;
+    }
+
+};
 
 int main() {
 
@@ -80,6 +120,38 @@ int main() {
     // ytChannel2.PublishedVideoTitles.push_back("Johny B - Cover");
     // ytChannel2.PublishedVideoTitles.push_back("Lorelei - Cover");
     // ytChannel2.GetInfo();
+
+    //inheritance
+    CookingYouTubeChannel ytCookChannel("Amy's Kitchen", "Amy");
+    CookingYouTubeChannel ytCookChannel2("John's kitchen", "John");
+    ytCookChannel.PublishVideo("Apple pie");
+    ytCookChannel.PublishVideo("Chocolate cake");
+    ytCookChannel.Subscribe();
+    ytCookChannel.Subscribe();
+    ytCookChannel.GetInfo();
+    ytCookChannel.Practice();
+    ytCookChannel2.Practice();
+
+    //ytChannel2.Prac //not available for parent class
+
+    SingersYouTubeChannel singersYtChannel ("JohnSings", "John");
+    singersYtChannel.Practice();
+    singersYtChannel.Practice();
+    singersYtChannel.Practice();
+    singersYtChannel.Practice();
+    singersYtChannel.Practice();
+    singersYtChannel.Practice();
+    ytCookChannel.Practice();
+
+    YouTubeChannel* yt1 = &ytCookChannel;
+    YouTubeChannel* yt2 = &singersYtChannel;
+
+    yt1 -> CheckAnalytics(); //-> for pointers
+    yt2 -> CheckAnalytics();
+    singersYtChannel.CheckAnalytics();
+
+
+
 
 
 }
