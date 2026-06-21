@@ -20,4 +20,6 @@ add_executable(while_loop Side_Projects/showAllNumbersdivby3and5.cpp
         Side_Projects/PinCheckingAttempts.cpp)
 add_executable(for_loop Side_Projects/Factorial.cpp
         Side_Projects/CheckAverageGrade.cpp
-        Side_Projects/MultiplicationTable.cpp)
+        Side_Projects/MultiplicationTable.cpp
+        Side_Projects/DrawRectangleStars.cpp
+        Side_Projects/DrawTriangle.cpp)
