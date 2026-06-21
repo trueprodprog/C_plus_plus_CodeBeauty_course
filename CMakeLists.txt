@@ -23,4 +23,6 @@ add_executable(for_loop Side_Projects/Factorial.cpp
         Side_Projects/MultiplicationTable.cpp
         Side_Projects/DrawRectangleStars.cpp
         Side_Projects/DrawTriangle.cpp)
-add_executable(functions Functions/function1.cpp)
+add_executable(functions Functions/function1.cpp
+        Functions/CheckPrimeNumber.cpp
+        Functions/FunctionsOverFlowViaSmmation.cpp)
