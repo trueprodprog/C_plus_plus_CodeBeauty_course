@@ -37,3 +37,4 @@ add_executable(OOP2 Side_Projects/OOP2WorkingForEncapsulation.cpp)
 add_executable(Pointers Pointers/Pointers1.cpp
         Pointers/ArraysAndPointers.cpp
         Pointers/ReturnViaPointersFromFunction.cpp)
+add_executable(DynamicArray Pointers/DynamicArrayPractice.cpp)
