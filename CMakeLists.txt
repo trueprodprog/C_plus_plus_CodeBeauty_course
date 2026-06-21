@@ -18,3 +18,4 @@ add_executable(while_loop Side_Projects/showAllNumbersdivby3and5.cpp
         Side_Projects/CountDigitsInNumber.cpp
         Side_Projects/ReverseOrderOfNumber.cpp
         Side_Projects/PinCheckingAttempts.cpp)
+add_executable(for_loop Side_Projects/Factorial.cpp)
