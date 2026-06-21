@@ -29,3 +29,8 @@ add_executable(functions Functions/function1.cpp
         Functions/GenericFunctionsExampleSwap.cpp
         Functions/RecursionExampleForSum.cpp)
 add_executable(ATMapp Side_Projects/ATMapp.cpp)
+#add_executable(OOP OOP/OOP1YoutubeChannel.cpp
+ #       OOP/OOP2.cpp)
+add_executable(OOP1 Side_Projects/OOPYoutubeChannel.cpp
+        Side_Projects/OOP2WorkingForEncapsulation.cpp)
+add_executable(OOP2 Side_Projects/OOP2WorkingForEncapsulation.cpp)

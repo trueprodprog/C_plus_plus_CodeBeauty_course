@@ -40,8 +40,8 @@ int main() {
 
     cout << "Sum = " << sum;*/
 
-    cout<<"Sum = " << recursive_sum(m, n);
-    cout<<"Factorial = " << factorial(3);
+    cout<<"Sum = " << recursive_sum(m, n) << endl;
+    cout<<"Factorial = " << factorial(3) << endl;
 
 
 }
