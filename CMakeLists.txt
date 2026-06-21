@@ -26,3 +26,4 @@ add_executable(for_loop Side_Projects/Factorial.cpp
 add_executable(functions Functions/function1.cpp
         Functions/CheckPrimeNumber.cpp
         Functions/FunctionsOverFlowViaSmmation.cpp)
+add_executable(ATMapp Side_Projects/ATMapp.cpp)

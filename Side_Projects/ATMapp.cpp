@@ -1,0 +1,52 @@
+#include <iostream>
+#include <cstdlib>
+using namespace std;
+
+
+void clearConsole() {
+    system("clear");
+}
+
+void showMenu() {
+    cout << "**********MENU**********" << endl;
+    cout << "1. Check balance" << endl;
+    cout << "2. Deposit" << endl;
+    cout << "3. Withdraw" << endl;
+    cout << "4. Exit" << endl;
+    cout << "************************" << endl;
+}
+
+int main() {
+    //check balance, deposit, withdraw, show menu
+    int option;
+    double balance = 500;
+
+    do {
+
+        showMenu();
+        cin >> option;
+        clearConsole();
+        switch (option) {
+            case 1: cout << "The balance is " << balance << "$" << endl; break;
+            case 2: cout << "Deposit amount:";
+                double depositAmount;
+                cin >> depositAmount;
+                balance += depositAmount;
+                break;
+            case 3: cout << "Withdraw: ";
+                double withdrawAmount;
+                cin >> withdrawAmount;
+                if (withdrawAmount > balance) {
+                    cout << "Not enough money" << endl;;
+                    break;
+                }
+                else {
+                    balance -= withdrawAmount;
+                    break;
+                }
+        }
+
+    } while (option != 4);
+
+
+}
