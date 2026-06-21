@@ -39,3 +39,4 @@ add_executable(Pointers Pointers/Pointers1.cpp
         Pointers/ReturnViaPointersFromFunction.cpp)
 add_executable(DynamicArray Pointers/DynamicArrayPractice.cpp)
 add_executable(MultidimensionalArrays Pointers/MultidimensionalArrays.cpp)
+add_executable(MemoryLeak Pointers/MemoryLeakExample.cpp)
